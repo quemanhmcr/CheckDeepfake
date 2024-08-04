@@ -178,7 +178,7 @@ def CheckDeepfake(video_path_cdn: str):
   while file.state.name == "PROCESSING":
     print(".", end="", flush=True)
     time.sleep(10)
-    file = genai.get_file(name)
+    file = genai.get_file(video_up.name)
   if file.state.name != "ACTIVE":
     raise Exception(f"File {file.name} failed to process")
   print("...all files ready")
