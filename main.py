@@ -484,4 +484,6 @@ def CheckDeepfake(video_path_cdn: str):
 
   response = chat_session.send_message("Đây là video deepfake hay người thật. Nếu là deepfake phản hồi 1, nếu là người thật phản hồi 0. Kèm theo % phía sau")
 
+  print(response.text)
+
   return {"message": response.text}
