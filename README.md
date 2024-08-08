@@ -1,5 +1,7 @@
 # CheckDeepfake
 
+Đây là một API đã được triển khai thực tế, chỉ cần gọi API kèm theo một url video đã được upload vào database, API sẽ phản hồi Deepfake or Real
+
 ```python
 def knapsack(W, wt, val, n):
   # Tạo mảng dp
